@@ -43,12 +43,11 @@ fun userInput(): String{
 fun intOrFloatChecker(input: String): Float {
     var num = input
     if (num.toIntOrNull() != null) {
-        println("the number is an integer but it will be converted to a float")
-        //var newNum = num.toFloat()
+        //println("the number is an integer but it will be converted to a float")
         var newNum = String.format("%.2f", num.toFloat())
         return newNum.toFloat()
     } else if (num.toFloatOrNull() != null) {
-        println("it isn't an integer but is a float")
+        //println("it isn't an integer but is a float")
         var newNum = String.format("%.2f", num.toFloat())
         return newNum.toFloat()
     } else {
@@ -127,15 +126,20 @@ fun income(): Float {
     if (payType == "h" || payType == "H" || payType == "hourly" || payType == "Hourly") {
         val weeksInYear: Int = 52
         println("How much do you get paid hourly?")
+        println()
         var rate = intOrFloatChecker(userInput())
         println("How many hours a week do you work?")
+        println()
         var hours = intOrFloatChecker(userInput()).toInt()
         var hourly = (((rate * hours) * weeksInYear) / monthsInYear)
         println("You get paid, $rate an hour, working $hours a week, which gives you a gross monthlyl income of $hourly")
+        println()
         println("How much additional income do you get paid on a monthly basis?")
+        println()
         var xtraIncome: Float = intOrFloatChecker(userInput())
         var totalIncome = String.format("%.2f", (hourly + xtraIncome)).toFloat()
         println("Your total monthly income is... $totalIncome")///////////
+        println()
 
         return totalIncome
 
@@ -143,13 +147,17 @@ fun income(): Float {
         //If payType is salary then monthly income will be annual salary divided by months of the year
         //annual salary / 12
         println("What is your annual income?")
+        println()
         var salary = intOrFloatChecker(userInput())
         var monthly = salary / monthsInYear
         println("With an annual salary of $salary your income is $monthly")////////////////////////check here for number format
+        println()
         println("How much additional income do you get paid on a monthly basis?")
+        println()
         var xtraIncome: Float = intOrFloatChecker(userInput())
         var totalIncome = monthly + xtraIncome
         println("Your total monthly income is... $totalIncome")
+        println()
         return totalIncome
         }
     else{
@@ -157,6 +165,7 @@ fun income(): Float {
         println("Valid Entries for Hourly: h or h or hourly or Hourly")
         println("Valid Entries for Salary: s or S or salary or Salary")
         println("Please use a valid entry.  ")
+        println()
         return income()
 
 
