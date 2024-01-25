@@ -7,7 +7,7 @@ This is a program created after a brief introduction to Kotlin.  This project us
 ### Purpose
 This program will help potential buyers determine their purchasing power based on the information they provide.  The target audience is specifically for individuals that are needing to make a purchase based on payments (aka payment buyers).  Cash buyers (buyers that don't want payments) will be supported in a future release.
 # Video Demo
-[Software Demo Video](http://youtube.link.goes.here)
+[Purchase Power Tool Video Demo](https://www.youtube.com/watch?v=TstGtFiooAs)
 
 # Development Environment
 - IntelliJ IDEA 2023.3.2 (Ultimate Edition) (Note: a free version is available for students or a 30 day trial)
