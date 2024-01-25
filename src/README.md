@@ -12,10 +12,11 @@ This program will help potential buyers determine their purchasing power based o
 # Development Environment
 - IntelliJ IDEA 2023.3.2 (Ultimate Edition) (Note: a free version is available for students or a 30 day trial)
 - Build #IU-233.13135.103, built on December 19, 2023
+- VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
 - Windows 11.0
 - Kotlin: 233.13135.103-IJ (Version 2023.3.2)
 
-{Describe the programming language that you used and any libraries.}
+
 #### Language
 - Kotlin (Version 2023.3.2)
 #### Libraries

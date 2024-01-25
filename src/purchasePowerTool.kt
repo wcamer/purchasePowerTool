@@ -19,7 +19,6 @@ fun main(){
     //This will plug information needed to generate a purchase power ranking
     alg(pp, pay, term, income, debt(income))
 
-
 }
 
 //////////////////////////////////////////////////user input function
@@ -88,11 +87,11 @@ class buy{
     }
     //Caluclates the price of the purchase
     fun paymentCalculator(purchasePrice: Float, term: Int): Float{
-        var pay = purchasePrice / term.toFloat()
+        var pay = purchasePrice / term
         pay = String.format("%.2f", pay).toFloat()
         println("With a purchase price of ...$purchasePrice and a term of...$term... the monthly payments will be $pay ")
         println()
-        return pay.toFloat()
+        return pay
     }
 
 }
@@ -180,9 +179,9 @@ fun income(): Float {
 class debtLoader{
 
     //Car and Food debt load is 15% of income
-    fun carAndFoodDebtload(income: Float, answer: Float, check: String): Float {
+    fun carAndFoodDebtload(income: Float, answer: Float, check: String): Float { // example of function and data types
 
-        if (income * .15 >  answer) {
+        if (income * .15 >  answer) { // example of conditional
             if(check == "car"){
                 println("The amount you put in for your car payment is less than 15% of income.")
                 println("Min Debt Load: ${income *.15} > Your car payment: ${answer} (${answer / income}% of your income)")
@@ -268,7 +267,7 @@ fun debt(income: Float ): Float {
         println()
         save = (income *.1).toFloat()
     }
-    var exp = (rent + car + food + save)
+    var exp = (rent + car + food + save) // example of expression
     println()
     //An output of the variables for user to see
     println("---Expenses overview---")
@@ -327,7 +326,7 @@ fun alg(purchasePrice: Float, payment: Float, term: Int, Income: Float, Expenses
     //Buy
     var pp: Float = purchasePrice
     var pmt: Float = payment
-    var t: Int = term
+    var t: Int = term // example of a data type (integer)
     //Income
     var inc: Float = Income
     //Debt
