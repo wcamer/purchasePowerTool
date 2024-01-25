@@ -7,8 +7,6 @@ This is a program created after a brief introduction to Kotlin.  This project us
 ### Purpose
 This program will help potential buyers determine their purchasing power based on the information they provide.  The target audience is specifically for individuals that are needing to make a purchase based on payments (aka payment buyers).  Cash buyers (buyers that don't want payments) will be supported in a future release.
 # Video Demo
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
